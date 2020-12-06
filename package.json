@@ -2,7 +2,7 @@
   "name": "algo1_javascript",
   "version": "1.0.0",
   "description": "\"\"\u001b[DAlgo 1\"\u001b[D de la test technique Counter\"",
-  "main": "solutionOfExemple.js",
+  "main": "solutionOfAlgo1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

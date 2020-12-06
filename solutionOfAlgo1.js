@@ -1,47 +1,50 @@
-const http = require('http');
-const app = require('./solutionOfExemple');
+let M;
+let N;
 
-const normalizePort = val => {
-  const port = parseInt(val, 10);
+M = Math.floor(Math.random() * 100000)+1;
 
-  if (isNaN(port)) {
-    return val;
-  }
-  if (port >= 0) {
-    return port;
-  }
-  return false;
-};
-const port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+N = Math.floor(Math.random() * 100000)+1; 
 
-const errorHandler = error => {
-  if (error.syscall !== 'listen') {
-    throw error;
-  }
-  const address = server.address();
-  const bind = typeof address === 'string' ? 'pipe ' + address : 'port: ' + port;
-  switch (error.code) {
-    case 'EACCES':
-      console.error(bind + ' requires elevated privileges.');
-      process.exit(1);
-      break;
-    case 'EADDRINUSE':
-      console.error(bind + ' is already in use.');
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
-};
 
-const server = http.createServer(app);
+let A=[]
+for (let K=0;K<M;K++)A[K]=Math.floor(Math.random() * N+1)+1; 
 
-server.on('error', errorHandler);
-server.on('listening', () => {
-  const address = server.address();
-  const bind = typeof address === 'string' ? 'pipe ' + address : 'port ' + port;
-  console.log('Listening on ' + bind);
-});
 
-server.listen(port);
+let init = (length,val)=>{
+    let constractTab =[];
+    for (let i=0;i<length;i++) constractTab[i]=val;
+    return constractTab
+}
+
+let increase = (X) =>{
+    X++
+    return X
+}
+
+let maxCounter = (arrToMax) =>{
+    let max = Math.max(...arrToMax);
+    arrToMax = init(N,max)
+    return arrToMax
+} 
+
+
+
+
+//for (let K=0;K<N;K++) A[K]=Math.floor(Math.random() * N)+1;
+let solution = (N, A)=>{
+    let Counters = init(N,0);
+    let K
+    for (K=0;K<A.length;K++) {
+        if(A[K] == N+1) {
+            Counters=maxCounter(Counters);
+        }
+        if (A[K] >= 1 && A[K]<=N){
+            Counters[A[K]-1]=increase(Counters[A[K]-1])
+        }
+        
+    }
+
+    return Counters
+}
+
+console.log(solution(N,A));
