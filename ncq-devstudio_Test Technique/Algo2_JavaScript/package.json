@@ -1,0 +1,19 @@
+{
+  "name": "algo2_javascript",
+  "version": "1.0.0",
+  "description": "\"Climb ladder algo2 test\"",
+  "main": "solutionOfAlgo2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaaMehdi/ncq-devstudioTestTechnique.git"
+  },
+  "author": "MERSNI Alaa Mehdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaaMehdi/ncq-devstudioTestTechnique/issues"
+  },
+  "homepage": "https://github.com/alaaMehdi/ncq-devstudioTestTechnique#readme"
+}

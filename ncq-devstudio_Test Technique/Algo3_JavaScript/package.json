@@ -1,0 +1,19 @@
+{
+  "name": "algo3_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaaMehdi/ncq-devstudioTestTechnique.git"
+  },
+  "author": "MERSNI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaaMehdi/ncq-devstudioTestTechnique/issues"
+  },
+  "homepage": "https://github.com/alaaMehdi/ncq-devstudioTestTechnique#readme"
+}

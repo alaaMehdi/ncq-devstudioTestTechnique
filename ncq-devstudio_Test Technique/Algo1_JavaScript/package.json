@@ -1,0 +1,19 @@
+{
+  "name": "algo1_javascript",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[DAlgo 1\"\u001b[D de la test technique Counter\"",
+  "main": "solutionOfAlgo1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaaMehdi/ncq-devstudioTestTechnique.git"
+  },
+  "author": "MERSNI Alaa Mehdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaaMehdi/ncq-devstudioTestTechnique/issues"
+  },
+  "homepage": "https://github.com/alaaMehdi/ncq-devstudioTestTechnique#readme"
+}
